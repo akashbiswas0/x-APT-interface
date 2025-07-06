@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #111;
+  font-family: 'Press Start 2P', monospace;
+  /* Tiny grid background */
+  background-image: linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1em;
+  background: #fff;
+  color: #111;
+  border: 3px solid #111;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #111;
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+button:hover {
+  box-shadow: 2px 2px 0 #111;
+  transform: translate(2px, 2px);
+}
+
+.neobrutal-card {
+  background: #fff;
+  border: 3px solid #111;
+  box-shadow: 8px 8px 0 #111;
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.neobrutal-card:hover {
+  box-shadow: 2px 2px 0 #111;
+  transform: translate(2px, 2px);
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.pixel-nav {
+  display: flex;
+  gap: 2em;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+@media (max-width: 600px) {
+  html, body {
+    font-size: 10px;
+    background-size: 8px 8px;
+  }
+  .neobrutal-card {
+    padding: 1em;
+  }
+  .pixel-nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

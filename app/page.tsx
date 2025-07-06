@@ -32,7 +32,7 @@ export default function Home() {
     <div style={{ minHeight: '100vh', width: '100vw', display: 'flex', flexDirection: 'column' }}>
       {/* Navigation */}
       <nav className="pixel-nav">
-        <a href="#brandkit">APTOS Native</a>
+        <a href="#native">APTOS Native</a>
       </nav>
 
       {/* Github and Try it out buttons */}
@@ -123,7 +123,7 @@ export default function Home() {
           x<span style={{ color: '#888' }}>-APT</span>
         </h1>
         <p style={{ fontSize: '1.1rem', margin: '2rem 0 2.5rem 0', color: '#222', fontWeight: 400 }}>
-          An open protocol for internet-native payments
+          Internet's invisible money pipeline.
         </p>
         <a href="#whitepaper" style={{ textDecoration: 'none' }}>
           {/* <button style={{ fontSize: '1.1rem', marginBottom: '2.5rem' }}>

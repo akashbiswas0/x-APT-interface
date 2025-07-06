@@ -32,8 +32,7 @@ export default function Home() {
     <div style={{ minHeight: '100vh', width: '100vw', display: 'flex', flexDirection: 'column' }}>
       {/* Navigation */}
       <nav className="pixel-nav">
-        <a href="#learn">Learn more</a>
-        <a href="#brandkit">Brand kit</a>
+        <a href="#brandkit">APTOS Native</a>
       </nav>
 
       {/* Github and Try it out buttons */}
@@ -141,8 +140,8 @@ export default function Home() {
             <p style={{ marginTop: 12 }}>xAPT as a protocol has 0 fees for either the customer or the merchant.</p>
           </div>
           <div className="neobrutal-card">
-            <b>Blockchain Agnostic</b>
-            <p style={{ marginTop: 12 }}>xAPT is not tied to any specific blockchain or token, its a neutral standard open to integration by all.</p>
+            <b>Aptos Ecosystem</b>
+            <p style={{ marginTop: 12 }}>xAPT is the aptos blockchain or token, its a neutral standard open to integration by all.</p>
           </div>
           <div className="neobrutal-card">
             <b>Security & trust via an open standard</b>
